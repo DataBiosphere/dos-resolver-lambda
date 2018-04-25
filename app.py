@@ -86,10 +86,10 @@ def get_data_bundle(data_bundle_id):
     # Modify the Data Bundle to include provenance about the
     # server we got metadata from.
 
-    dos_url = "{}/dataobjects/{}".format(
+    dos_url = "{}/databundles/{}".format(
         found_server, data_bundle_id)
 
     data_bundle = data_bundles[0]
-    data_bundle['urls'].append({'url': dos_url})
+    data_bundle['system_metadata'] = {'dosurl': dos_url}
 
     return {'data_bundle': data_bundle}
