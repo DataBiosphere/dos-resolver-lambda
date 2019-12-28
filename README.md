@@ -25,6 +25,8 @@ by the NCI GDC:
 In this case, the request was routed to another lambda, which translated
 the request from NCI GDC into the DOS schemas.
 
+For more, check out the [example-usage notebook](example-usage.ipynb)!
+
 ## Development
 
 This is Open Source software, please offer a PR or feature request in the issues!
